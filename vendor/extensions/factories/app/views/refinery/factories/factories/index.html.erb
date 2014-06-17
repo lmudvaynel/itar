@@ -1,0 +1,31 @@
+<div class="page-content">
+  <div class="row clearfix mb">
+    <div class="filterable">
+      <ul class="filter">
+      </ul>
+    </div>
+  </div>
+
+<div class="row clearfix mbs">
+  <div class="grid_10">
+
+  <ul class="portfolio clearfix">
+    <% @factories.each do |factory| %>
+      <li class="grid_6" data-type="digital">
+        <div class="hover-fx">
+          <% if factory.title_image != nil %>
+            <img src="<%= factory.title_image.url %>">
+          <% end %>
+          <a class="fRight" href="<%= url_for_factory(factory) %>"><span><i class="icon-eye-open"></i></span></a>
+        </div>
+        <div class="detailes">
+          <h5> <a href="<%= url_for_factory(factory) %>"><%= factory.name %></a> </h5>
+        </div>
+      <div>
+      </li>
+    <% end %>
+  </ul>
+
+  </div>
+</div>
+

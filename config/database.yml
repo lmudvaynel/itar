@@ -1,0 +1,20 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: westalko
+  username: artjom
+  password: 'dilainik'
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: west_alko_test
+  username: root
+  password: 'Ghfdlbycr12mysql'
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: west_alko_prod
+  username: root
+  password: ''

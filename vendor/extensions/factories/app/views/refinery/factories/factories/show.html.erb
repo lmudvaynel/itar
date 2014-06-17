@@ -1,0 +1,18 @@
+<div class="page-content">
+    
+      <div class="row clearfix mbs">
+      	<h4> <%= @factory.name %> </h4>
+        <div class="grid_12">
+              <ul class="portfolio clearfix">
+                <% Refinery::FactoryPhotos::FactoryPhoto.where("factory_id = ?", params[:id]).each do |obj| %>
+                <li class="grid_3">
+                  <div class="hover-fx">
+                    <a href="<%= obj.image.url %>" data-gal="lightbox"><img src="<%= obj.image.url %>"></a>
+                  </div>
+                </li>
+                <% end %>
+              </ul>
+        </div><!-- grid 12 -->
+        <%=raw @factory.description %>
+      </div><!-- row -->
+    </div><!-- end page content -->
