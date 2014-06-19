@@ -7,10 +7,10 @@
     left:95%;
     top:15px;"
   }
-  
   #logo{
-    position: relative;
-    left: 360px;
+    position: absolute;
+    left: 540px;
+    width: 200px;
     top: 10px;
   }
   <% if @page.slug == "home" %>
@@ -45,6 +45,14 @@
       background-size: cover;
       
     }
+  <% else %>
+    .breadcrumb-place{
+      background: #0b0b0b url(<%= image_path('header_under.jpg') %>) no-repeat top center;
+    }
+    #header{
+      background: url(<%= image_path('header.jpg') %>) no-repeat center top; 
+      background-size: cover;
+    }
   <% end %>
 </style>
 
@@ -78,7 +86,9 @@
     <div class="row">
       <div id="lang_switch"><%= link_for_lang %> </div>
       <div class="logo" id="logo">
-        <img src="<%= image_path('itar.png') %>" width="55" height="55" >
+        <a href="/">
+          <img src="<%= image_path('itar.png') %>" width="55" height="55" >
+        </a>
       </div><!-- end logo -->
     </div><!-- row -->
 </div><!-- head -->
@@ -111,6 +121,9 @@
                   <%= link_to factory.name, url_for_factory(factory) %>
                 </li>
               <% end %>
+                <li>
+                  <a href="http://west-alko.com">West Alko</a>
+                </li>
               </ul>
             <% end %>
             </li>
