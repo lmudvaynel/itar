@@ -1,3 +1,52 @@
+<style type="text/css">
+  .head {
+    height: 205px;
+  }
+  #lang_switch{
+    position:absolute;
+    left:95%;
+    top:15px;"
+  }
+  
+  #logo{
+    position: relative;
+    left: 360px;
+    top: 36px;
+  }
+  <% if @page.slug == "home" %>
+    #layout_header { 
+      /*background-color: rgba(0, 20, 0, 0.6);*/
+       /* fallback */
+      /*background-color: rgba(0, 0, 50, 0.6);*/
+      /*background-image: url(images/radial_bg.png);*/
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      /* Safari 4-5, Chrome 1-9 */
+      /* Can't specify a percentage size? Laaaaaame. */
+      background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(255,255,255,1)), to(rgba(0,0,80,0.5)));
+
+      /* Safari 5.1+, Chrome 10+ */
+      background: -webkit-radial-gradient(circle, rgba(255,255,255,1), rgba(0,0,80,0.5));
+
+      /* Firefox 3.6+ */
+      background: -moz-radial-gradient(circle, rgba(255,255,255,1), rgba(0,0,80,0.5));
+
+      /* IE 10 */
+      background: -ms-radial-gradient(circle, rgba(255,255,255,1), rgba(0,0,80,0.5));
+
+      /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+    }
+    #layout{ 
+      background: url(<%= image_path('background_home.jpg') %>) no-repeat center top; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      
+    }
+  <% end %>
+</style>
 
 <div class="extrabox">
   <div class="row clearfix">
@@ -29,8 +78,8 @@
     <div class="row">
       <div id="lang_switch"><%= link_for_lang %> </div>
       <div class="logo" id="logo">
+        <img src="<%= image_path('itar.png') %>" height="20">
       </div><!-- end logo -->
-
     </div><!-- row -->
 </div><!-- head -->
 

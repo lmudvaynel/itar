@@ -2,48 +2,20 @@
 <%= render "/refinery/html_tag" %>
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
-    <style type="text/css">
-      <% if @page.slug == "home" %>
-        #layout { 
-          background: url(<%= image_path('background.jpg') %>) no-repeat center center; 
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          overflow:hidden;
-        }
-      <% end %>
-      .head {
-        height: 205px;
-      }
-      #lang_switch{
-        position:absolute;
-        left:95%;
-        top:15px;"
-      }
-    </style>
-
     <%= render "/refinery/head" %>
   </head>
   
   <body>
-    <div>
-      <% if not  @page.slug == 'home' %>
-        <div id="layout" class="full">
-          <div id="page_container">
-            <header id="header" class="header_v4">
-              <%= render "/refinery/header" -%>
-            </header>
-            <section id="page">
-              <%= yield %>
-            </section>
+    <div id="layout" class="full">
+      <div id="page_container">
+        <header id="header" class="header_v4">
+          <div id="layout_header">
+            <%= render "/refinery/header" -%>
           </div>
-        </div>
+        </header>
+          <%= yield %>
       </div>
-      <div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
-    <% else %>
-      <%= yield %>
-    <% end %>
+    </div>
     <%= render "/refinery/javascripts" %>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>

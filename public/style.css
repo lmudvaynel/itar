@@ -812,7 +812,8 @@ body[class^="frame_"] div.frame_10 { background: url(images/frames/10.png) repea
 }
 .headdown {
 	background: #191919;
-	color: #fff
+	color: #fff;
+	width:100%;
 }
 .headdown .social-head {
 	margin: 6px 0 6px 10px
@@ -1059,7 +1060,7 @@ li li a .sf-sub-indicator {  border-bottom: 0 !important }
 /*	Page Content
 ----------------------------------------------------------------------*/
 .page-content {
-	margin: 70px 0;
+	margin: 0px 0;
 }
 .grey-line {
 	width: 100%;
@@ -4420,7 +4421,7 @@ a.notification-close {
 	display: block;
 	color: #BFBFBF;
 	background: #fff;
-	height: 100px;
+	height: 35px;
 }
 .detailes h5 {
 	margin: 0 0 2px 0;
@@ -7316,7 +7317,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .mb { margin-bottom: 20px !important }
 .mbt { margin-bottom: 30px !important }
 .mbf { margin-bottom: 40px !important }
-.mbs { margin-bottom: 70px !important  }
+.mbs { margin-bottom: 0px !important  }
 
 .pt { padding-top: 120px }
 
