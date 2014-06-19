@@ -11,7 +11,7 @@
   #logo{
     position: relative;
     left: 360px;
-    top: 36px;
+    top: 10px;
   }
   <% if @page.slug == "home" %>
     #layout_header { 
@@ -78,7 +78,7 @@
     <div class="row">
       <div id="lang_switch"><%= link_for_lang %> </div>
       <div class="logo" id="logo">
-        <img src="<%= image_path('itar.png') %>" height="20">
+        <img src="<%= image_path('itar.png') %>" width="55" height="55" >
       </div><!-- end logo -->
     </div><!-- row -->
 </div><!-- head -->
