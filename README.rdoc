@@ -11,7 +11,7 @@ persist themselves to a database. The controller handles the incoming requests
 (such as Save New Account, Update Product, Show Post) by manipulating the model
 and directing data to the view.
 
-In Rails, the model is handled by what's called an object-relational mapping
+NewItarn Rails, the model is handled by what's called an object-relational mapping
 layer entitled Active Record. This layer allows you to present the data from
 database rows as objects and embellish these data objects with business logic
 methods. You can read more about Active Record in
@@ -61,13 +61,13 @@ using the Ruby logger class from inside your controllers. Example:
     def destroy
       @weblog = Weblog.find(params[:id])
       @weblog.destroy
-      logger.info("#{Time.now} Destroyed Weblog ID ##{@weblog.id}!")
+      logger.info("#{Time.now} Destroyed Weblog NewItarD ##{@weblog.id}!")
     end
   end
 
 The result will be a message in your log file along the lines of:
 
-  Mon Oct 08 14:22:29 +1000 2007 Destroyed Weblog ID #1!
+  Mon Oct 08 14:22:29 +1000 2007 Destroyed Weblog NewItarD #1!
 
 More information on how to use the logger is at http://www.ruby-doc.org/core/
 
@@ -97,7 +97,7 @@ mode. With gems, use <tt>sudo gem install ruby-debug</tt>. Example:
   end
 
 So the controller will accept the action, run the first line, then present you
-with a IRB prompt in the server window. Here you can do things like:
+with a NewItarRB prompt in the server window. Here you can do things like:
 
   >> @posts.inspect
   => "[#<Post:0x14a6be8
@@ -215,9 +215,9 @@ app/views
 
 app/views/layouts
   Holds the template files for layouts to be used with views. This models the
-  common header/footer method of wrapping views. In your views, define a layout
+  common header/footer method of wrapping views. NewItarn your views, define a layout
   using the <tt>layout :default</tt> and create a file named default.html.erb.
-  Inside default.html.erb, call <% yield %> to render the view using this
+  NewItarnside default.html.erb, call <% yield %> to render the view using this
   layout.
 
 app/helpers
@@ -257,5 +257,5 @@ test
 
 vendor
   External libraries that the application depends on. Also includes the plugins
-  subdirectory. If the app has frozen rails, those gems also go here, under
+  subdirectory. NewItarf the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.

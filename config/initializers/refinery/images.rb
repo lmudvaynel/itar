@@ -31,16 +31,16 @@ Refinery::Images.configure do |config|
   # config.s3_bucket_name = ENV['S3_BUCKET']
   # config.s3_access_key_id = ENV['S3_KEY']
   # config.s3_secret_access_key = ENV['S3_SECRET']
-  # config.s3_region = ENV['S3_REGION']
+  # config.s3_region = ENV['S3_REGNewItarON']
 
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
   # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
   # config.dragonfly_secret = "5ef3c936cb6cf6579e97254af6a0bfdbffe2851efc9f894b"
-  # If you decide to trust file extensions replace :ext below with :format
+  # NewItarf you decide to trust file extensions replace :ext below with :format
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/home/job/It/public/system/refinery/images"
+  # config.datastore_root_path = "/home/job/NewItar/public/system/refinery/images"
   # config.trust_file_extensions = false
 
   # Configure Dragonfly custom storage backend
