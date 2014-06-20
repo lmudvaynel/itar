@@ -23,7 +23,7 @@ namespace :db do
 
     desc "Create mysql database"
     task :create_database, :roles => :db do
-      mysql_root_sql "CREATE DATABASE IF NOT EItISTS #{mysql_db_name}"
+      mysql_root_sql "CREATE DATABASE IF NOT EXISTS #{mysql_db_name}"
     end
 
     desc "Create database.yml in shared path"
