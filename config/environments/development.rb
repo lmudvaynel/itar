@@ -1,4 +1,4 @@
-NewItar::Application.configure do
+I::Application.configure do
   config.cache_classes = false
 
   config.whiny_nils = true
