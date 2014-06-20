@@ -1,4 +1,4 @@
-ItarDone::Application.configure do
+It::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -24,8 +24,8 @@ ItarDone::Application.configure do
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files
-  # config.action_dispatch.x_sendfile_header = "ItarDone-Sendfile" # for apache
-  # config.action_dispatch.x_sendfile_header = 'ItarDone-Accel-Redirect' # for nginx
+  # config.action_dispatch.x_sendfile_header = "It-Sendfile" # for apache
+  # config.action_dispatch.x_sendfile_header = 'It-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true

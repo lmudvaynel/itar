@@ -7,7 +7,7 @@ set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "Itar" #write app name there
+set :application, "It" #write app name there
 
 set :scm, :git
 set :repository,  "git@github.com:derevjaginti/itar.git" #place your repo there

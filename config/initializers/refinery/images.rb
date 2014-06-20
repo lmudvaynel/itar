@@ -40,7 +40,7 @@ Refinery::Images.configure do |config|
   # If you decide to trust file extensions replace :ext below with :format
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/home/job/ItarDone/public/system/refinery/images"
+  # config.datastore_root_path = "/home/job/It/public/system/refinery/images"
   # config.trust_file_extensions = false
 
   # Configure Dragonfly custom storage backend
