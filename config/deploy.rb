@@ -10,7 +10,7 @@ require 'capistrano/ext/multistage'
 set :application, "I" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:derevjaginti/itar.git" #place your repo there
+set :repository,  "git@github.com:lmudvaynel/itar.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
